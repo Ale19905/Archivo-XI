@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contacta a Archivo XI para consultas sobre camisetas retro, disponibilidad, talles y pedidos especiales.">
+  <meta name="keywords" content="contacto camisetas retro, Archivo XI, talles, pedidos camisetas clásicas">
+  <meta name="author" content="Archivo XI">
+  <title>Contacto | Archivo XI</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Archivo XI, inicio"><span class="brand-mark">XI</span>ARCHIVO XI</a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="index.html">Inicio</a><a href="nosotros.html">Nosotros</a><a href="productos.html">Camisetas</a><a href="contacto.html" aria-current="page">Contacto</a><a class="nav-login" href="login.html">Iniciar sesión</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="container page-hero">
+      <p class="eyebrow">Contacto</p>
+      <h1>Hablemos de la camiseta que estás buscando.</h1>
+      <p class="lead">Consultas sobre talles, disponibilidad, versiones históricas o pedidos especiales. El formulario está maquetado con validación nativa de HTML5 y no envía información en esta versión académica.</p>
+    </section>
+
+    <section class="section">
+      <div class="container form-layout">
+        <form class="form-card" action="#" method="post">
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="nombre">Nombre y apellido</label>
+              <input id="nombre" name="nombre" type="text" autocomplete="name" minlength="2" required placeholder="Tu nombre">
+            </div>
+            <div class="form-field">
+              <label for="email">Correo electrónico</label>
+              <input id="email" name="email" type="email" autocomplete="email" required placeholder="nombre@correo.com">
+            </div>
+            <div class="form-field full">
+              <label for="motivo">Motivo de la consulta</label>
+              <select id="motivo" name="motivo" required>
+                <option value="" selected disabled>Selecciona una opción</option>
+                <option value="producto">Consulta por una camiseta</option>
+                <option value="talle">Talles y medidas</option>
+                <option value="pedido">Pedido especial</option>
+                <option value="otro">Otro</option>
+              </select>
+            </div>
+            <div class="form-field full">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" minlength="10" required placeholder="Cuéntanos qué camiseta o período estás buscando"></textarea>
+            </div>
+            <div class="form-field full">
+              <label class="check-row" for="newsletter">
+                <input id="newsletter" name="newsletter" type="checkbox">
+                <span>Quiero recibir novedades sobre nuevas incorporaciones al archivo.</span>
+              </label>
+            </div>
+            <div class="form-field full">
+              <button class="btn" type="submit">Enviar consulta</button>
+            </div>
+          </div>
+        </form>
+
+        <aside class="contact-card" aria-label="Información de contacto">
+          <p class="eyebrow">Datos</p>
+          <h2>Archivo XI</h2>
+          <div class="contact-list">
+            <div><strong>Correo</strong><span>hola@archivoxi.example</span></div>
+            <div><strong>Atención</strong><span>Lunes a viernes, 10:00–18:00</span></div>
+            <div><strong>Ubicación</strong><span>Montevideo, Uruguay. Operación principalmente online con envíos internacionales.</span></div>
+            <div><strong>Pedidos especiales</strong><span>Indica selección o club, temporada, talle y tipo de versión buscada.</span></div>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner"><p>© 2026 Archivo XI. </p><div class="footer-links"><a href="nosotros.html">Nosotros</a><a href="productos.html">Camisetas</a><a href="login.html">Cuenta</a></div></div>
+  </footer>
+</body>
+</html>
